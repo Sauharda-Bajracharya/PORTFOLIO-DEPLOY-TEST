@@ -1,0 +1,167 @@
+.window-content {
+  z-index: 2;
+  position: relative;
+  padding: 50px 56px 192px;
+  display: flex;
+  right: 10px;
+
+  .hero-section {
+    display: flex;
+    font-family: "PP Neue Montreal";
+  }
+}
+
+.text-container {
+  grid-row-gap: 64px;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+
+  .title {
+    .title-text {
+      font-size: 82px;
+      color: var(--alternate-color);
+      line-height: 1.02;
+      text-align: left;
+      letter-spacing: -1px;
+      text-shadow: 0 5px 10px rgba(255, 255, 255, 0.1),
+        0 -5px 10px rgba(197, 197, 197, 0.12),
+        0 -5px 25px rgba(255, 255, 255, 0.15);
+      font-weight: 500;
+
+      // Desktops
+
+      @media screen and (min-width: 1440px) and (max-width: 2560px) {
+        font-size: 82px;
+      }
+      // Large Laptop
+      @media screen and (min-width: 1296px) and (max-width: 1440px) {
+        font-size: 74px;
+      }
+
+      // Medium Laptop
+      @media screen and (min-width: 1132px) and (max-width: 1296px) {
+        font-size: 68px;
+      }
+
+      // Small Laptop
+      @media screen and (min-width: 968px) and (max-width: 1132px) {
+        font-size: 62px;
+      }
+
+      // Large Tablet
+      @media screen and (min-width: 828px) and (max-width: 968px) {
+        font-size: 56px;
+      }
+
+      // Tablets
+      @media screen and (min-width: 768px) and (max-width: 828px) {
+        font-size: 50px;
+      }
+
+      // Small Tablets
+      @media screen and (min-width: 658px) and (max-width: 767.5px) {
+        font-size: 42px;
+      }
+
+      // Smaller Tablets
+      @media screen and (min-width: 578px) and (max-width: 658px) {
+        font-size: 36px;
+      }
+
+      @media screen and (min-width: 568px) and (max-width: 578px) {
+        font-size: 34px;
+        line-height: 1.1;
+      }
+
+      // Large Phones
+      @media screen and (max-width: 568px) {
+        display: none;
+      }
+
+      .grad-text {
+        background-image: linear-gradient(
+          45deg,
+          #6e91b9 0%,
+          #bcc8dc 100%,
+          #9ab1e5 0%,
+          #698bbf 100%
+        );
+
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: gradientAnimation 8s linear infinite;
+        animation-direction: alternate;
+        background-size: 300% 100%;
+        text-shadow: none;
+
+        @media screen and (max-width: 568px) {
+          background-image: none;
+        }
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0;
+        }
+        to {
+          background-position: 100%;
+        }
+      }
+    }
+
+    .desc {
+      font-size: 28px;
+      line-height: 1.4;
+      color: var(--gray-color);
+      display: flex;
+      flex-direction: column;
+      margin-top: 36px;
+      text-align: left;
+      position: absolute;
+      // right: 30px;
+
+      // Large Laptop
+      @media screen and (min-width: 1236px) and (max-width: 1440px) {
+        font-size: 28px;
+        margin-right: 40px;
+      }
+
+      // Medium Laptop
+      @media screen and (min-width: 1132px) and (max-width: 1236px) {
+        font-size: 26px;
+      }
+
+      // Small Laptop
+      @media screen and (min-width: 1056px) and (max-width: 1132px) {
+        font-size: 26px;
+      }
+
+      // Smaller Laptop
+      @media screen and (min-width: 968px) and (max-width: 1056px) {
+        font-size: 25px;
+      }
+
+      // Large Tablet
+      @media screen and (min-width: 772px) and (max-width: 968px) {
+        font-size: 22px;
+      }
+
+      // Tablets
+      @media screen and (min-width: 678px) and (max-width: 772px) {
+        font-size: 20px;
+      }
+
+      // Small Tablets
+      @media screen and (min-width: 568px) and (max-width: 678px) {
+        font-size: 18px;
+      }
+
+      // Large Phones
+      @media screen and (max-width: 568px) {
+        display: none;
+      }
+    }
+  }
+}

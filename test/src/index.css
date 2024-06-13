@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("./assets/font/Neue_Montreal/NeueMontreal-Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "PP Mori";
+  src: url("./assets/font/pp-mori/PPMori-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Neue";
+  src: url("./assets/font/neue/NeueMachina-Regular.otf") format("opentype");
+}
