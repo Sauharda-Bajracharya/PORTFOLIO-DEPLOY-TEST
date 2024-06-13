@@ -76,7 +76,7 @@ gsap.ticker.lagSmoothing(0);
   background-color: #fff;
   border-radius: 50%;
   position: fixed;
-  z-index: 9999;
+  z-index: 99999;
   pointer-events: none;
   transition: transform 0.35s ease-out, opacity 0.25s ease-out;
   transform: translate(-50%, -50%) scale(0.5);
